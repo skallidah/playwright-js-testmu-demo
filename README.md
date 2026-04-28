@@ -1,7 +1,8 @@
-# Playwright JavaScript — TestMu Demo
+# Playwright JS Demo with TestMu AI
 
-> End-to-end browser automation with JavaScript & Playwright, runnable three ways:
-> **locally** on your machine, on **LambdaTest Browser Cloud**, or at scale on **HyperExecute**.
+> A demo project showcasing end-to-end browser automation using Playwright and JavaScript, runnable
+> **locally**, on **LambdaTest Browser Cloud**, or at scale on **HyperExecute** — helping teams validate tests
+> across environments with ease.
 
 ---
 
