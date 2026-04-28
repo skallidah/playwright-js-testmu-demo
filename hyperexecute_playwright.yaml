@@ -1,0 +1,45 @@
+# hyperexecute_playwright.yaml
+version: 0.1
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+runson: linux
+autosplit: true
+concurrency: 4
+tunnel: false
+
+project:
+  name: DEMO_PLAYWRIGHT_JS_PROJECT
+
+build:
+  name: DEMO_RUN
+
+scenarioCommandStatusOnly: true
+video: true
+captureScreenRecordingForScenarios: true
+
+pre:
+  - echo "Installing dependencies with cache..."
+  - npm ci --cache ~/.npm --prefer-offline --no-audit --progress=false
+  - echo "Installing Playwright browsers..."
+  - npx playwright install --with-deps
+
+# Improved caching
+cacheKey: npm-cache-{{ checksum "package-lock.json" }}
+
+cacheDirectories:
+  - ~/.npm
+  - node_modules
+  - ~/.cache/playwright
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: find ./tests -type f -name "*.js"
+
+testRunnerCommand: npx playwright test $test --headed --reporter=list
+
+env:
+  PLAYWRIGHT_BROWSERS_PATH: ~/.cache/playwright
+
+jobLabel: ['playwright', 'vanilla-js', 'linux', 'autosplit']

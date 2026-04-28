@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+.hyperexecute/
+hyperexecute-cli.log
+hyperexecuteupdate
+hyperexecute_playwright.yaml.1
+.updatedhyperexecute.yaml
+screenshots/
+*.png
+.DS_Store
