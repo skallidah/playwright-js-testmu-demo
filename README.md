@@ -280,8 +280,6 @@ Live results stream at [HyperExecute Dashboard](https://hyperexecute.lambdatest.
 
 | | Local | Browser Cloud | HyperExecute |
 |---|:---:|:---:|:---:|
-| No account needed | ✅ | ❌ | ❌ |
-| Works offline | ✅ | ❌ | ❌ |
 | Cross-browser / OS coverage | ❌ | ✅ | ✅ |
 | True parallel execution | Limited | Manual | ✅ Auto |
 | Session video & logs | ❌ | ✅ | ✅ |
@@ -425,7 +423,6 @@ Scaling local is not possible beyond your hardware.
 ## Resources
 
 - [Playwright JavaScript Docs](https://playwright.dev/docs/intro)
-- [LambdaTest Playwright Integration](https://www.lambdatest.com/support/docs/playwright-testing/)
+- [TestMu Playwright Integration](https://www.lambdatest.com/support/docs/playwright-testing/)
 - [HyperExecute Docs](https://www.lambdatest.com/support/docs/getting-started-with-hyperexecute/)
 - [HyperExecute YAML Reference](https://www.lambdatest.com/support/docs/deep-dive-into-hyperexecute-yaml/)
-- [TestMu Conference](https://www.lambdatest.com/testmuconf)
